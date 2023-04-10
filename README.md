@@ -12,7 +12,7 @@ IMPORTANT: hold ctrl c to stop the program; please stop it after few tries cuz e
 for jank2 download these: https://github.com/OlafenwaMoses/ImageAI/tree/master/imageai/Detection
 
 - kohei: detect if object left or right (and maybe if object on ground to prevent tripping)
-- ngoni: detect the cane (if possible detect what bounding boxes overlap with the cane so can say what the blind person is pointing at)
+- ngoni: detect the cane (ok objec detection cant detect idk how to detect now maybe detect th white pixels) (if possible detect what bounding boxes overlap with the cane so can say what the blind person is pointing at)
 - lucy: add depth estimation to objects (https://github.com/nianticlabs/monodepth2)
 - toshi: add text ocr
 - ambitious: train custom object detection for the blind cane (https://manivannan-ai.medium.com/how-to-train-yolov2-to-detect-custom-objects-9010df784f36, https://manivannan-ai.medium.com/how-to-train-yolov3-to-detect-custom-objects-ccbcafeb13d2)
