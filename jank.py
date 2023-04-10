@@ -1,5 +1,5 @@
-import sys
-sys.path.append('C:\\users\\toshi\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.9_qbz5n2kfra8p0\\localcache\\local-packages\\python39\\site-packages')
+#import sys
+#sys.path.append('C:\\users\\toshi\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.9_qbz5n2kfra8p0\\localcache\\local-packages\\python39\\site-packages')
 
 from transformers import pipeline
 image_to_text = pipeline("image-to-text", model="nlpconnect/vit-gpt2-image-captioning")
