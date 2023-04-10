@@ -7,6 +7,8 @@ so open ur camera app to fullscreen to test
 2. https://cloud.google.com/sdk/docs/install-sdk
 3. https://googleapis.dev/python/google-api-core/latest/auth.html
 
+IMPORTANT: hold ctrl c to stop the program; please stop it after few tries cuz every time use google cloud some money is used in my account (currently running on free credits given by google)
+
 - kohei: detect if object left or right (and maybe if object on ground to prevent tripping)
 - ngoni: detect the cane (if possible detect what bounding boxes overlap with the cane so can say what the blind person is pointing at)
 - lucy: add depth estimation to objects (https://github.com/nianticlabs/monodepth2)
