@@ -14,3 +14,4 @@ IMPORTANT: hold ctrl c to stop the program; please stop it after few tries cuz e
 - lucy: add depth estimation to objects (https://github.com/nianticlabs/monodepth2)
 - toshi: add text ocr
 
+![image](https://cdn.discordapp.com/attachments/652418855142031361/1094896113640804393/o10042023154935.png)
