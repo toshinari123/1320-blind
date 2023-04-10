@@ -3,7 +3,7 @@
 it literally screenshots the screen everytime and sends it to a bunch of ais; 
 so open ur camera app to fullscreen to test
 
-1. `pip install transformers google.cloud pyautogui datetime gtts playsound`
+1. `pip install transformers google.cloud pyautogui datetime gtts playsound Image`
 2. https://cloud.google.com/sdk/docs/install-sdk
 3. https://googleapis.dev/python/google-api-core/latest/auth.html
 
