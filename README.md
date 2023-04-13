@@ -11,6 +11,8 @@ IMPORTANT: hold ctrl c to stop the program; please stop it after few tries cuz e
 
 for jank2 download these: https://github.com/OlafenwaMoses/ImageAI/tree/master/imageai/Detection
 
+(scoll down forthe 3 files; put in same folder as jank)
+
 - kohei: detect if object left or right (and maybe if object on ground to prevent tripping)
 - ngoni: detect the cane (ok objec detection cant detect idk how to detect now maybe detect th white pixels) (if possible detect what bounding boxes overlap with the cane so can say what the blind person is pointing at)
 - lucy: add depth estimation to objects (https://github.com/nianticlabs/monodepth2)
