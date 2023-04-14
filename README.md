@@ -3,7 +3,7 @@
 it literally screenshots the screen everytime and sends it to a bunch of ais; 
 so open ur camera app to fullscreen to test (https://webcamtests.com/)
 
-install libraries: `pip install transformers google.cloud pyautogui datetime gtts playsound Image imageai torch torchvision opencv-python`
+install libraries: `pip install transformers google.cloud pyautogui datetime gtts playsound Image imageai torch torchvision opencv-python numpy`
 
 for gcloud:
 
