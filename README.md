@@ -26,8 +26,7 @@ so open ur camera app to fullscreen to test (https://webcamtests.com/)
 
 install libraries: 
 
-1. `pip install transformers google.cloud pyautogui datetime gtts playsound Image imageai torch torchvision opencv-python numpy openmim`
-2. `mim install mmcv-lite`
+1. `pip install transformers google.cloud pyautogui datetime gtts playsound Image imageai torch torchvision opencv-python numpy mmcv-full==1.2.7 ipython attr timm==0.3.2`
 
 for gcloud:
 
