@@ -5,7 +5,7 @@ In our project, we demonstrate a prototypical smart glasses to help blind people
 components:
 - smart glasses: streams video and audio to the internet by connecting to a wifi network. To enable transportability one can connect it to a mobile hotspot instead.
 - backend / server / computer: receives the video and audio streams; analyze the audio stream for voice commands and sends the video data to a bunch of ai to convert to useful text.
-- in the prototype: the text is read aloud by the computer and the output audio is streamed to the blind persons phone
+- in the prototype: the text is read aloud by the computer and the output audio is streamed to the blind persons phone throuugh the internet
 - ideally: the text is sent to a custom app on the blind persons phone and it reads out the texts
 
 note on image / video:
