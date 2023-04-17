@@ -26,7 +26,7 @@ so open ur camera app to fullscreen to test (https://webcamtests.com/)
 
 install libraries: 
 
-1. `pip install transformers google.cloud pyautogui datetime gtts playsound Image imageai torch torchvision opencv-python numpy mmcv-full==1.2.7 ipython attr timm==0.3.2`
+1. `pip install sounddevice soundfile gtts transformers pyautogui pillow speechrecognition scipy torch`
 
 for gcloud:
 
@@ -37,6 +37,10 @@ for imageai:
 
 1. download the 3 .pt files on this webpage (scroll down a bit) https://github.com/OlafenwaMoses/ImageAI/tree/master/imageai/Detection
 2. put in same folder as the python scripts
+
+for huggingface:
+
+1. no setup required we will use this as the main one
 
 IMPORTANT: hold ctrl c to stop the program; please stop it after few tries cuz every time use google cloud some money is used in my account (currently running on free credits given by google)
 
