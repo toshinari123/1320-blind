@@ -26,7 +26,7 @@ so open ur camera app to fullscreen to test (https://webcamtests.com/)
 
 install libraries: 
 
-1. `pip install sounddevice soundfile gtts transformers pyautogui pillow speechrecognition scipy torch`
+1. `pip install sounddevice soundfile gtts transformers pyautogui pillow speechrecognition scipy torch timm`
 
 for gcloud:
 
