@@ -24,9 +24,9 @@ voice commands:
 it literally screenshots the screen everytime and sends it to a bunch of ais; 
 so open ur camera app to fullscreen to test (https://webcamtests.com/)
 
-install libraries: 
+install libraries (for huggingface): 
 
-1. `pip install sounddevice soundfile gtts transformers pyautogui pillow speechrecognition scipy torch timm`
+1. `pip install sounddevice soundfile gtts transformers pyautogui pillow speechrecognition scipy torch timm playsound`
 
 for gcloud:
 
