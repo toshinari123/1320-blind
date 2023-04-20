@@ -65,8 +65,8 @@ def recognize(audio_array):
 bool on = True;
 def process(image, command):
     print(command)
-    if 'glasses' in command:
-        read('Hello I am here')
+    if 'help' in command:
+        read('available voice commands: help, start, stop, remind, reminder, describe, picture, crop')
     if 'start' in command:
         read('Starting')
         on = True
@@ -103,3 +103,9 @@ else:
         process(ss, command)
         sd.wait()
         command = recognize(recording)
+        if 'remind' in command:
+            read('saving reminder')
+            write('rem/reminder.wav', 44100, recording)
+        if 'reminder' in command:
+            data, fs = sf.read('rem/reminder.wav')
+            sd.play(data, fs)
