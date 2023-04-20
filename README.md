@@ -13,7 +13,11 @@ note on image / video:
 - ideally: the video stream itself is taken as the input to more sophisticated machine learning models in order to take advantage of the temporal relations between frames
 
 voice commands:
-- [nothing]: every 10 seconds it reads aloud what object it detected and if the objects are to the left, in front, or to the right.
+- [nothing]: every 10 seconds it reads aloud what object it detected according to the flowchart.
+- "start": turns on
+- "stop": turns off
+- "remind": saves the recording of what the user said
+- "reminder": plays the most recent "remind" recording
 - "describe": sends the image to a natural languge processing model to generate a coherent description of the image.
 - "picture": saves the image and in the prototype saves it to a google drive for future use of the blind person; ideally the image will be sent to the custom app
 - "crop" (todo): crops image to a rectangular object such as a poster or a paper the user is holding; describes the cropped image and saves it as well
