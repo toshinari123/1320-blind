@@ -10,14 +10,13 @@ from PIL import ImageDraw
 import speech_recognition as sr
 import io
 from scipy.io.wavfile import write
-from playsound import playsound
-import wavio as wv
 
 def read(s):
     audio = gTTS(text = s, lang = "en", slow = False)
-    audiopath = 'tmp/' + datetime.now().strftime("%d%m%Y%H%M%S") + '.mp3'
+    audiopath = 'tmp/' + datetime.now().strftime("%d%m%Y%H%M%S") + '.wav'
     audio.save(audiopath)
-    playsound(audiopath)
+    data, fs = sf.read(audiopath)
+    sd.play(data, fs)
     #os.remove(name)
 
 duration = 10
@@ -63,8 +62,25 @@ def recognize(audio_array):
         except sr.UnknownValueError:
             return ""
 
+bool on = True;
 def process(image, command):
     print(command)
+    if 'glasses' in command:
+        read('Hello I am here')
+    if 'start' in command:
+        read('Starting')
+        on = True
+    if 'stop' in command:
+        read('Stopping')
+        on = False
+    if !on:
+        return
+    if 'describe' in command:
+        read('description: you are seeing' + gen_desc(image))
+    if 'picture' in command:
+        read('saving the picture')
+        image.save('pics/' + datetime.now().strftime("%d%m%Y%H%M%S") + '.png')
+
     detect_object(image)
     segment_image(image)
     #segment_image_city(image)
