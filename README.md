@@ -14,6 +14,7 @@ note on image / video:
 
 voice commands:
 - [nothing]: every 10 seconds it reads aloud what object it detected according to the flowchart.
+- "help": reads aloud available commands
 - "start": turns on
 - "stop": turns off
 - "remind": saves the recording of what the user said
