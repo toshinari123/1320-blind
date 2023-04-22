@@ -16,13 +16,13 @@ def read(s):
     audiopath = 'tmp/' + datetime.now().strftime("%d%m%Y%H%M%S") + '.wav'
     audio.save(audiopath)
     data, fs = sf.read(audiopath)
+    #sd.default.device = 'CABLE Input (VB-Audio Virtual C, MME'
     sd.play(data, fs)
     #os.remove(name)
 
 duration = 10
 sd.default.samplerate = 44100
 sd.default.channels = 1
-#sd.default.device = 'Speakers (Realtek(R) Audio), MME'
 
 read('starting up')
 
@@ -33,6 +33,8 @@ def gen_desc(image):
 object_detector = pipeline(model = "facebook/detr-resnet-50")
 def detect_object(image):
     objs = object_detector(image)
+    #sort the objects by name and then by bounding box area
+    #read the largest 2 or 3 objects of the same name
     print(objs)
 
 image_segmenter = pipeline(model = "nvidia/segformer-b0-finetuned-ade-512-512")
@@ -62,8 +64,9 @@ def recognize(audio_array):
         except sr.UnknownValueError:
             return ""
 
-bool on = True;
+on = True;
 def process(image, command):
+    global on
     print(command)
     if 'help' in command:
         read('available voice commands: help, start, stop, remind, reminder, describe, picture, crop')
@@ -73,7 +76,7 @@ def process(image, command):
     if 'stop' in command:
         read('Stopping')
         on = False
-    if !on:
+    if not on:
         return
     if 'describe' in command:
         read('description: you are seeing' + gen_desc(image))
@@ -96,6 +99,7 @@ if test:
 else:
     command = ''
     while True:
+        #sd.default.device = 'Line 1 (Virtual Audio Cable), MME'
         recording = sd.rec(int(duration * sd.default.samplerate), channels = 1, dtype = 'int32')
         ss = pyautogui.screenshot()
         sspath = 'out/' + datetime.now().strftime("%d%m%Y%H%M%S") + '.png'
