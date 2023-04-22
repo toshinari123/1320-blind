@@ -40,6 +40,7 @@ def detect_object(image):
 image_segmenter = pipeline(model = "nvidia/segformer-b0-finetuned-ade-512-512")
 def segment_image(image):
     segs = image_segmenter(image)
+    #read warning if a mask has more then 90% of pixels
     print(segs)
 
 #image_segmenter_city = pipeline(model = "nvidia/segformer-b5-finetuned-cityscapes-1024-1024")
